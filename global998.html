@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma Replica</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .diploma-container {
+            background-color: white;
+            width: 210mm; /* A4 Standart Genişlik */
+            height: 297mm; /* A4 Standart Yükseklik */
+            padding: 15mm;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .qr-code {
+            position: absolute;
+            top: 20mm;
+            left: 20mm;
+            width: 35mm;
+            height: 35mm;
+        }
+
+        .header-section {
+            margin-top: 10mm;
+            margin-bottom: 20mm;
+        }
+
+        .univ-name {
+            font-size: 16pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 5px 0;
+        }
+
+        .label-small {
+            font-size: 8pt;
+            font-style: italic;
+            color: #555;
+            display: block;
+        }
+
+        .main-content {
+            margin-top: 20mm;
+        }
+
+        .decision-text {
+            font-size: 12pt;
+            margin: 15mm 0;
+        }
+
+        .student-name {
+            font-size: 18pt;
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+            display: inline-block;
+            margin: 10mm 0 2mm 0;
+            padding: 0 20px;
+        }
+
+        .major-section {
+            margin: 10mm 0;
+        }
+
+        .degree-title {
+            font-size: 22pt;
+            font-weight: bold;
+            margin: 10mm 0;
+        }
+
+        .qualification-section {
+            margin: 10mm 0;
+        }
+
+        .footer-section {
+            position: absolute;
+            bottom: 30mm;
+            width: calc(100% - 30mm);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            text-align: left;
+        }
+
+        .rector-side {
+            width: 40%;
+        }
+
+        .info-side {
+            width: 40%;
+            text-align: right;
+        }
+
+        .underline {
+            border-bottom: 1px solid #000;
+            display: inline-block;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .seal {
+            font-size: 10pt;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="diploma-container">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://example.com" alt="QR Code" class="qr-code">
+
+    <div class="header-section">
+        <div class="univ-name">TOSHKENT DAVLAT IQTISODIYOT UNIVERSITETI </div>
+        <div class="univ-name">TASHKENT STATE UNIVERSITY OF ECONOMICS [cite: 2]</div>
+        <span class="label-small">va / (the educational institution) [cite: 3, 9]</span>
+    </div>
+
+    <div class="main-content">
+        <div class="decision-text">
+            Davlat attestatsiya komissiyasining 2023-yil 22-iyun dagi qaroriga binoan [cite: 5, 6]<br>
+            In accordance with the decision of the State Attestation Commission from June 22, 2023 [cite: 10]
+        </div>
+
+        <div class="student-name">XAKIMOVA DILNOZA FAXRIDDIN QIZI</div>
+        <div class="student-name" style="display:block; border:none; font-size: 14pt;">KHAKIMOVA DILNOZA [cite: 11]</div>
+        <span class="label-small">(bitiruvchining familiyasi, ismi, otasining ismi) / (graduate's surname, first name, other name) [cite: 29]</span>
+
+        <div class="major-section">
+            <strong>Turizm (faoliyat yo'nalishlari bo'yicha) [cite: 7]</strong><br>
+            <strong>Tourism (by specializations of activity) [cite: 30]</strong><br>
+            <span class="label-small">(ta'lim yo'nalishining nomi) / (in the speciality) [cite: 8, 30]</span>
+        </div>
+
+        <div class="degree-title">
+            BAKALAVR DARAJASI [cite: 15]<br>
+            BACHELOR'S DEGREE [cite: 31, 32]
+        </div>
+
+        <div class="qualification-section">
+            <strong>Iqtisodchi / Economist [cite: 16, 33]</strong><br>
+            <span class="label-small">(kvalifikatsiya nomi) / (qualification) [cite: 17, 34]</span>
+            <div style="margin-top: 5px;">kvalifikatsiyasi berildi / and qualified as [cite: 18, 19]</div>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="rector-side">
+            <div><strong>Rektor / Rector:</strong> <span class="underline">K. A. SHARIPOV [cite: 20, 27]</span></div>
+            <div class="seal">M.O'. / P.S. [cite: 21, 35]</div>
+        </div>
+        <div class="info-side">
+            <div>Ro'yxatga olish raqami / Registration number: <strong>2049 [cite: 23, 28, 36]</strong></div>
+            <div>2023-yil 14-iyul, Toshkent [cite: 25]</div>
+            <div>July 14, 2023, Tashkent [cite: 37]</div>
+            <span class="label-small">(berilgan sana va joy) / (date, place) [cite: 26, 38]</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
